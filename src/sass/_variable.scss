@@ -1,0 +1,52 @@
+// Colors
+$black: #000;
+$white: #fff;
+
+$gray700: #4B4B4B;
+
+$primary: #F6D524;
+
+// navbar
+$navbar-padding-x: 4px !default;
+$navbar-padding-y: 12px !default;
+$navbar-height: 64px !default;
+$navbar-bg-color: transparant !default;
+$navbar-color: $white !default;
+$navbar-border-color: none !default;
+
+// navbar list items
+$navbar-item-padding-x: 4px !default;
+$navbar-item-padding-y: 12px !default;
+$navbar-item-color: $gray700 !default;
+$navbar-item-font-weigth: 700 !default;
+$navbar-item-font-size: 1.125rem !default;
+$navbar-item-line-height: 1.5 !default;
+$navbar-item-hover-opacity: 0.7 !default;
+
+// navbar sub items
+$navbar-sub-item-padding-x: 30px !default;
+$navbar-sub-item-padding-y: 7px !default;
+$navbar-sub-item-font-weigth: 400 !default;
+$navbar-sub-item-font-size: 1.125rem !default;
+$navbar-sub-item-line-height: 1.5 !default;
+
+// Search bar
+$search-padding-x: 7px !default;
+$search-padding-y: 20px !default;
+$search-border-color: $black !default;
+$search-border-radius: 100px !default;
+
+// navbar brand
+$navbar-brand-color: $white;
+
+// Hamburger
+$hamburger-padding-x: 12px !default;
+$hamburger-padding-y: 12px !default;
+$hamburger-line-width: 28px !default;
+$hamburger-line-height: 2px !default;
+$hamburger-line-spacing: 4px !default;
+$hamburger-line-color: $white !default;
+$hamburger-line-border-radius: 4px !default;
+$hamburger-hover-opacity: 0.7 !default;
+$hamburger-line-active-color: $hamburger-line-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;

@@ -1,0 +1,132 @@
+header.header {
+
+    .header-navbar {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: $navbar-height;
+        background-color: $navbar-bg-color;
+        border-bottom: 1px solid $navbar-border-color;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 64px;
+        background: $navbar-bg-color;
+        color: $navbar-color;
+    }
+
+    @media screen and (min-width: 600px) {
+        .navbar {
+            justify-content: space-between;
+        }
+    }
+
+    .navbar-brand {
+        color: $navbar-brand-color;
+    }
+
+    .navbar-account {
+        text-decoration: none;
+        color: $gray700;
+    }
+
+    .navbar-basket {
+        position: relative;
+        text-decoration: none;
+        color: $gray700;
+
+        .basket-count {
+            position: absolute;
+            top: -14px;
+            right: -16px;
+            background-color: red;
+            color: $white;
+            padding: 3px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .basket-icon {}
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    @media screen and (min-width: 600px) {
+        .navbar-toggle {
+            display: none;
+        }
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: calc(100vw - 60%);
+        height: 100vh;
+        overflow: auto;
+        background-color: $navbar-bg-color;
+        transform: translateY(100vh);
+        transition: all .2s ease-in-out;
+        margin-top: $navbar-height;
+
+        &.navbar-collapse-right {
+            transform: translateX(100vh);
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        .navbar-collapse {
+            position: relative;
+            width: auto;
+            height: auto;
+            overflow: visible;
+            background: transparent;
+            transform: translateX(0);
+            margin-top: 0;
+
+            &.navbar-collapse-right {
+                transform: translateX(0);
+            }
+        }
+    }
+
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
+
+.navbar-open header.header {
+
+    @media screen and (max-width: 600px) {
+
+        // navbar collapse open
+        .navbar-collapse {
+            transform: translateY(0);
+
+            &.navbar-collapse-right {
+                transform: translateX(0);
+            }
+        }
+
+        // navbar menu in collapse open
+        .navbar-nav {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+}

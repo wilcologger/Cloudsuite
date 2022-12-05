@@ -1,0 +1,33 @@
+.navbar-nav {
+    .nav-item {
+        position: relative;
+        display: block;
+        padding: $navbar-item-padding-x $navbar-item-padding-y;
+
+        &.nav-item-has-childeren:hover {
+            .sub-menu {
+                display: block;
+            }
+        }
+
+        >.nav-link:not(.sub-nav-link) {
+            padding: 5px 15px;
+            border-radius: 100px;
+        }
+
+        &:hover>.nav-link:not(.sub-nav-link) {
+            color: $white;
+            background-color: $primary;
+        }
+    }
+
+    .nav-link {
+        position: relative;
+        color: $navbar-item-color;
+        display: block;
+        text-decoration: none;
+        font-weight: $navbar-item-font-weigth;
+        font-size: $navbar-item-font-size;
+        line-height: $navbar-item-line-height;
+    }
+}
