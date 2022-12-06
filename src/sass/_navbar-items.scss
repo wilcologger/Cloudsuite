@@ -2,7 +2,7 @@
     .nav-item {
         position: relative;
         display: block;
-        padding: $navbar-item-padding-x $navbar-item-padding-y;
+        // padding: $navbar-item-padding-x $navbar-item-padding-y;
 
         &.nav-item-has-childeren:hover {
             .sub-menu {

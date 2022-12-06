@@ -8,17 +8,21 @@ hamburger.addEventListener('click', () => {
 });
 
 /** Window scroll */
-const scrollPosition = window.scrollY;
-const logoContainer = document.getElementsByClassName('js-logo')[0];
+let scrollpos = window.scrollY;
+const header = document.querySelector('.header-navbar');
+const header_height = header.offsetHeight;
+
+const add_class_on_scroll = () => header.classList.add('fade-in');
+const remove_class_on_scroll = () => header.classList.remove('fade-in');
 
 window.addEventListener('scroll', function () {
-  // scrollPosition = window.scrollY;
+  scrollpos = window.scrollY;
 
-  if (scrollPosition >= 500) {
-    logoContainer.classList.add('c-logo--scrolled');
-    console.log('hallow');
+  if (scrollpos >= header_height) {
+    add_class_on_scroll();
   } else {
-    logoContainer.classList.remove('c-logo--scrolled');
-    console.log('bye!!');
+    remove_class_on_scroll();
   }
+
+  console.log(scrollpos);
 });

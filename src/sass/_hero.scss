@@ -1,4 +1,29 @@
-h1 {
-    color: red;
-    font-size: 28px;
+.hero {
+
+    &-image {
+        position: relative;
+        background: linear-gradient(0deg, rgba(131, 182, 210, 0.9), rgba(131, 182, 210, 0.9)), url(/assets/image/roselyn-tirado-GDWmu0bFfS4-unsplash.png);
+        min-height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-caption {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 660px;
+    }
+
+    h1 {
+        font-family: 'Gochi Hand', cursive;
+        font-weight: 400;
+        font-size: 4.875rem;
+        line-height: 90px;
+        color: $white;
+    }
 }
